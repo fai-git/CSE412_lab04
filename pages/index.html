@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Page!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <nav>
+    <ul class="nav-bar">
+      <li class="logo"><a href="index.html">EDGo Logo</a></li>
+      <div class="center-links">
+        <li><a>Performance Dashboard</a></li>
+  
+      </div>
+    </ul>
+    <a href="index.html" class="home" title="Home"></a>
+    <a href="contact.html" class="profile-icon" title="Profile"></a>
+  </nav>
+</header>
+
+
+  <section class="features">
+    <!-- Sidebar Toggle Button -->
+<button id="toggle-sidebar" class="sidebar-toggle"></button>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <ul>
+    <li><a href="#">Course Description</a></li>
+    <li><a href="#">Syllabus</a></li>
+    <li><a href="#">Midterm</a></li>
+    <li><a href="#">Retake Exam</a></li>
+    <li><a href="#">Faculty Info</a></li>
+  </ul>
+</div>
+
+  </section>
+
+  <section class="lower">
+    <h2>Explore More Features</h2>
+    <p>Our AI assistant helps with quizzes and grading!</p>
+  </section>
+
+  <footer>
+    Dhaka, Bangladesh
+  </footer>
+
+  <button class="learn-more">Click here to learn more</button>
+
+  <script>
+  const toggleBtn = document.getElementById('toggle-sidebar');
+  const sidebar = document.getElementById('sidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
